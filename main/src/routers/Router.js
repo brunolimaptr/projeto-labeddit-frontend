@@ -37,7 +37,7 @@ export function Router() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route index path="/login" element={<Login
+                <Route index path="/" element={<Login
                     login={login}
                     setLogin={setLogin}
                 />} />

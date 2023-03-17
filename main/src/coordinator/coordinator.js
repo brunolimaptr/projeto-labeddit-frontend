@@ -1,5 +1,5 @@
 export const vaiParaLogin = (navigate) => {
-    navigate("/login")
+    navigate("/")
 }
 
 export const vaiParaPost = (navigate) => {
