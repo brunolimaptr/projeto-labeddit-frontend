@@ -1,8 +1,11 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import { Main } from "./login.styled";
+import { CardGeral, Main, MainLogin } from "./login.styled";
 import { vaiParaLogin, vaiParaPost, vaiParaSignup } from "../coordinator/coordinator";
 import { useNavigate } from "react-router-dom";
+import logoLabeddit from "../assets/img/logoLabeddit.png"
+import barra from "../assets/img/barra.png"
+import barraInferior from "../assets/img/barraInferior.png"
 
 export function Login(props) {
 
@@ -25,7 +28,6 @@ export function Login(props) {
       const onChangePassword = (e) => {
         setPassword(e.target.value);
       }
-console.log(props.Login);
 
 const postLogin = async () => {
 
@@ -44,13 +46,17 @@ const postLogin = async () => {
 
 
 return (
-<Main>
-    
-    <p>Email</p><input onChange={onChangeEmail} type="text" value={email} placeholder={"E-mail"}></input>
-    <p>Password</p><input onChange={onChangePassword} type="text" value={password} placeholder={"Senha"}></input>
-    <button onClick={()=>postLogin()}><em>Continuar</em></button>
-    <button onClick={()=>vaiParaSignup(navigate)}><em>Crie uma conta!</em></button>
-</Main>
+<MainLogin>
+    <img src={logoLabeddit}/>
+    <p className="TituloLabeddit"><b>{"LabEddit"}</b></p>
+    <p className="SubTitulo">{"O projeto de rede social da Labenu"}</p>
+    <input className="InputEmail" onChange={onChangeEmail} type="text" value={email} placeholder={"E-mail"}></input>
+    <input className="InputSenha" onChange={onChangePassword} type="text" value={password} placeholder={"Senha"}></input>
+    <button className="BotaoContinuar" onClick={()=>postLogin()}><p>{"Continuar!"}</p></button>
+    <img className="Barra" src={barra}/>
+    <button className="BotaoCrieConta" onClick={()=>vaiParaSignup(navigate)}><div>{"Crie uma conta!"}</div></button>
+    <img className="BarraInferior" src={barraInferior}/>
+</MainLogin>
 )
 
 }

@@ -12,6 +12,7 @@ const GlobalStyled = createGlobalStyle`
 function App() {
   return (
  <>
+ <GlobalStyled/>
    <Router/>
   </>
   );
