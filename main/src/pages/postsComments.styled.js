@@ -22,10 +22,10 @@ background: #EDEDED;
 margin-left: 46vw;
 }
 
-/* .BotaoLogout{
+.BotaoLogout{
 margin-left: 84vw;
 margin-bottom: 19vh;  
-} */
+}
 
 
 .InputComment{
