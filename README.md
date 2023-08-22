@@ -11,7 +11,7 @@ Quem se cadastrar no aplicativo poderá criar, comentar e curtir publicações.
 
 ## Deploy
 
-
+[ https://github.com/brunolimaptr/labeddit-frontend.git](https://labeddit-frontend-nine.vercel.app/)
 
 
 ## Stack utilizada
